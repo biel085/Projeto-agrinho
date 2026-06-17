@@ -1,1 +1,124 @@
+/* Variáveis de Cor (Fácil de customizar) */
+:root {
+    --primary-color: #2e7d32;
+    --primary-dark: #1b5e20;
+    --accent-color: #e65100;
+    --accent-dark: #b53d00;
+    --bg-color: #f1f8e9;
+    --text-color: #2c3e50;
+    --card-bg: #ffffff;
+}
 
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+.main-header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.main-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Container Principal */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+/* Card Interativo */
+.card {
+    background-color: var(--card-bg);
+    max-width: 500px;
+    width: 100%;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(46, 125, 50, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.badge {
+    display: inline-block;
+    background-color: #e8f5e9;
+    color: var(--primary-dark);
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+.card p {
+    margin-bottom: 2rem;
+    color: #546e7a;
+    font-size: 1.05rem;
+}
+
+/* Botão Estilizado */
+#btn-proximo {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(230, 81, 0, 0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+#btn-proximo:hover {
+    background-color: var(--accent-dark);
+    box-shadow: 0 6px 16px rgba(230, 81, 0, 0.3);
+}
+
+#btn-proximo:active {
+    transform: scale(0.98);
+}
+
+/* Rodapé */
+.main-footer {
+    background-color: #cfd8dc;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    color: #37474f;
+}
