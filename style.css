@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Campo à Cidade: A Jornada dos Alimentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header class="main-header">
+        <h1>Do Campo à Cidade</h1>
+        <p>Descubra a jornada dos alimentos frescos até a sua mesa</p>
+    </header>
+
+    <main class="container">
+        <article class="card" id="jornada-card">
+            <div class="card-content">
+                <span class="badge" id="etapa-numero">Etapa 1 de 4</span>
+                <h2 id="titulo-etapa">A Colheita</h2>
+                <p id="descricao-etapa">Os agricultores colhem as verduras, legumes e frutas no momento certo para garantir a máxima qualidade.</p>
+            </div>
+            <button id="btn-proximo" aria-label="Avançar para a próxima etapa">
+                Acompanhar Viagem <span class="seta">➔</span>
+            </button>
+        </article>
+    </main>
+
+    <footer class="main-footer">
+        <p>Projeto open-source disponível no GitHub Pages © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
